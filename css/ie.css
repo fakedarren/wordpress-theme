@@ -1,0 +1,38 @@
+
+#masthead {
+	height: 62px;
+}
+#masthead .site-title {
+	font-size: 24px;
+	height: 62px;
+}
+#masthead .site-title a {
+	display: block;
+	height: 62px;
+	line-height: 62px;
+	padding: 0 20px;
+}
+
+#site-navigation .container {
+	margin: 0;
+}
+
+nav .menu-main-container {
+	display: block;
+}
+nav .menu-main-container li {
+	background-position: 100% 50% !important;
+	height: 62px;
+}
+nav .menu-main-container li a {
+	color: #FFF;
+	display: block;
+	font-family: 'Comic Sans', 'Comic Sans MS', sans-serif;
+	font-size: 13px;
+	height: 62px;
+	line-height: 62px;
+	padding-left: 10px;
+	padding-right: 36px;
+	text-indent: 0;
+	width: auto;
+}

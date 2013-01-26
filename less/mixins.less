@@ -1,0 +1,71 @@
+.hide() {
+	left: -9999px;
+	position: absolute;
+}
+.show(){
+	left: auto;
+	position: static;
+}
+.hide-text() {
+	text-indent: -9999px;
+}
+.clearfix() {
+	clear: both;
+	content: '';
+	display: table;
+}
+
+.offset-shadow(@size, @color) {
+	-webkit-box-shadow: @size @size @color;
+	-moz-box-shadow: @size @size @color;
+	-ms-box-shadow: @size @size @color;
+	-o-box-shadow: @size @size @color;
+	box-shadow: @size @size @color;
+}
+
+.offset-shadow-bottom(@size, @color) {
+	&:after {
+		background: @color;
+		content: '';
+		display: block;
+		height: @size;
+		margin-left: @size;
+		width: 100%;
+	}
+}
+
+.fake-shadow-above(@size, @color) {
+	&:before {
+		background: @color;
+		content: '';
+		display: block;
+		height: @size;
+		left: 0;
+		margin-left: @size;
+		position: absolute;
+		right: 0;
+	}
+}
+
+.content-block(@size: 8px) {
+	background-color: @content-background;
+	margin: @size @size (@size * 2);
+	padding: @size;
+	.offset-shadow(@size, @content-background-shadow);
+}
+
+.style-links() {
+	a {
+		background-color: @link-background;
+		color: @link-color;
+		text-decoration: none;
+		&:hover {
+			background-color: @link-background-hover;
+			color: @link-color-hover;
+			text-decoration: underline;
+		}
+	}	
+}
+
+.repeating-linear-gradient-bg(@angle, @start, @color1, @color2) {
+}

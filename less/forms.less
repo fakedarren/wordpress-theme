@@ -1,0 +1,64 @@
+form {
+	label {
+		color: @bg;
+		font-size: 13px;
+		line-height: 32px;
+		padding-right: 16px;
+	}
+	[type=text],
+	textarea {
+		border: 0;
+		box-sizing: border-box;
+		font-family: @serif;
+		font-size: 13px;
+		line-height: 16px;
+		.content-block(4px);
+		margin-bottom: 12px;
+		&:focus {
+			background: @link-background;
+			.offset-shadow(4px, #C1C2A7);
+		}
+	}
+	[type=text] {
+		height: 32px;
+		padding: 0 8px;
+		width: 360px;
+	}
+	textarea {
+		float: right;
+		padding: 8px;
+		width: 548px;
+	}
+	.form-allowed-tags {
+		clear: both;
+		color: @bg;
+		font-size: 10px;
+		padding: 16px 0;
+	}
+	[type=submit] {
+		background: #236600;
+		border: 0;
+		color: @bg;
+		cursor: pointer;
+		font-family: @sans-serif;
+		font-size: 14px;
+		height: 32px;
+		line-height: 32px;
+		padding: 0 16px;
+		.offset-shadow(4px, #1F3D00);
+		&:hover,
+		&:focus {
+			background: #0CAE49;
+			.offset-shadow(4px, #196A1E);
+		}
+	}
+}
+
+.form-wrapper {
+	background: @alt-bg;
+	text-align: right;
+	.fake-shadow-above(8px, @bg-shadow);	
+	form {
+		padding: 24px 0 8px;
+	}
+}

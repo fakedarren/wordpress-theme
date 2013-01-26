@@ -1,0 +1,175 @@
+.site-header {
+	background: #333;
+	border-bottom: 8px solid #000;
+	border-top: 8px solid @bg;
+	margin: 0 0 16px;
+	hgroup {
+		float: left;
+	}
+	.main-navigation {
+		float: right;
+	}
+	&:after {
+		content: '';
+		clear: both;
+		display: table;
+	}
+}
+
+.site-title {
+	background-color: @orange;
+	color: #424242;
+	display: inline-block;
+	font-family: 'Righteous';
+	font-size: 12px;
+	height: 31px;
+	margin-left: 8px;
+	.offset-shadow-bottom(8px, @orange-shadow);
+	a {
+		color: inherit;
+		display: inline-block;
+		line-height: 31px;
+		padding: 0 8px;
+		text-decoration: none;
+	}
+}
+
+.site-description {
+	.hide();
+}
+
+.main-navigation {
+	h3 {
+		left: -9999px;
+		position: absolute;
+	}
+	ul {
+		border-right: 8px solid #333;
+		li {
+			.hide();
+			float: left;
+			height: 31px;
+			margin-right: 8px;
+			a {
+				display: inline-block;
+				height: 31px;
+				text-indent: -9999px;
+				width: 31px;
+			}
+			&.menu-item-352 {
+				background-color: @red2;
+				.offset-shadow-bottom(8px, @red2-shadow);
+				.show();
+			}
+			&.menu-item-353 {
+				background: @blue2 url(css/images/twitter-tiny.gif) no-repeat 50% 50%;
+				.offset-shadow-bottom(8px, @blue2-shadow);
+				.show();
+			}
+			&.menu-item-354 {
+				background: @green2 url(css/images/github-tiny.gif) no-repeat 50% 50%;
+				.offset-shadow-bottom(8px, @green2-shadow);
+				.show();
+			}
+		}
+	}
+}
+
+.page-header,
+.archive-header {
+	text-align: right;
+	.content-block();
+	.style-links();
+}
+
+@media screen and (min-width: 480px) {
+	.site-header {
+		border-bottom-width: 12px;
+		border-top-width: 12px;
+		margin: 0 0 24px;
+	}
+	.site-title {
+		font-size: 16px;
+		height: 46px;
+		margin-left: 12px;
+		.offset-shadow-bottom(12px, @orange-shadow);
+		a {
+			line-height: 46px;
+			padding: 0 12px;
+		}
+	}
+	.main-navigation {
+		ul {
+			border-right-width: 12px;
+			li {
+				height: 46px;
+				margin-right: 12px;
+				a {
+					height: 46px;
+					width: 46px;
+				}
+				&.menu-item-352 {
+					.offset-shadow-bottom(12px, @red2-shadow);
+				}
+				&.menu-item-353 {
+					background-image: url(css/images/twitter-small.gif);
+					.offset-shadow-bottom(12px, @blue2-shadow);
+				}
+				&.menu-item-354 {
+					background-image: url(css/images/github-small.gif);
+					.offset-shadow-bottom(12px, @green2-shadow);
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (min-width: 768px) {
+	.site-header {
+		border-bottom-width: 16px;
+		border-top-width: 16px;
+		margin: 0 0 32px;
+	}
+	.site-title {
+		font-size: 24px;
+		height: 62px;
+		margin-left: 16px;
+		.offset-shadow-bottom(16px, @orange-shadow);
+		a {
+			line-height: 62px;
+			padding: 0 16px;
+		}
+	}
+	.main-navigation {
+		ul {
+			border-right-width: 16px;
+			li {
+				height: 62px;
+				margin-right: 16px;
+				a {
+					color: #FFF;
+					font-family: Righteous;
+					font-size: 14px;
+					height: 62px;
+					line-height: 62px;
+					padding: 0 54px 0 16px;
+					text-indent: 0;
+				}
+				&.menu-item-352 {
+					.offset-shadow-bottom(16px, @red2-shadow);
+				}
+				&.menu-item-353 {
+					background-image: url(css/images/twitter-small.gif);
+					background-position: 100% 50%;
+					.offset-shadow-bottom(16px, @blue2-shadow);
+				}
+				&.menu-item-354 {
+					background-image: url(css/images/github-small.gif);
+					background-position: 100% 50%;
+					.offset-shadow-bottom(16px, @green2-shadow);
+				}
+			}
+		}
+	}
+}
